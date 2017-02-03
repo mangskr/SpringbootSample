@@ -43,9 +43,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
-public class Application {
+//@SpringBootApplication 어노테이션은 @Configuration, @EnableAutoConfiguration 그리고 @ComponentScan을 디폴트 속성으로 함께 사용하는 것과 같다.
+//@SpringBootApplication
+public class MainApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(MainApplication.class, args);
         System.out.println("Spring Boot Started.");
     }
 }
